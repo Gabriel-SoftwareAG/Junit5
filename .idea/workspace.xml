@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="31adfc30-fd1c-4684-8fe0-d2053a588098" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/junit-platform-console-standalone-1.11.0-M2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/NumericalUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/AnnotationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssertionsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssumptionsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/BasicAnnotationsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ConditionalTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/DependencyInjectionTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledClassDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledTestsDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ExtensionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/FastTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/FirstExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/LifeCycleAnnotationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/MyArgumentsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/NativeDITests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParallelTestExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParameterizationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ProgrammingExtensionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/Random.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/RandomNumberDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestLifecycleLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestWatcherDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/DatabaseAndWebServerExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/DatabaseExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/ExtensionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/HandlingContextExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/IgnoreIOExceptionExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/ParameterResolverDemoExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RandomNumberExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RecordStateOnErrorExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/SuiteLevelExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestResultProcessingExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TimingExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/WebServerExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.junit.jupiter.api.extension.Extension" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2hQj6d9L1SR8S10yJEqbSzN4m9x" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nir/code/Junit5-Course/src/test/resources&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ai.verisoft" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nir\code\Junit5-Course\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nir\code\Junit5-Course\src\test\resources" />
+      <recent name="C:\Users\nir\code\Junit5-Course\src\main\resources" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="ai.verisoft" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ParallelTestExample">
+    <configuration name="ExtensionTest.testExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.extensions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.ExtensionTest" />
+      <option name="METHOD_NAME" value="testExtension" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParallelTestExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.ParallelTestExample" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProgrammingExtensionTest.extensionExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.extensions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.ProgrammingExtensionTest" />
+      <option name="METHOD_NAME" value="extensionExample" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomNumberDemoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.extensions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.RandomNumberDemoTest" />
+      <option name="METHOD_NAME" value="test(int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestWatcherDemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.TestWatcherDemoTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RemoteJunit5" type="Remote">
+      <module name="Junit5-Course" />
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <option name="AUTO_RESTART" value="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5005" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.ParallelTestExample" />
+      <item itemvalue="JUnit.ExtensionTest.testExtension" />
+      <item itemvalue="JUnit.ProgrammingExtensionTest.extensionExample" />
+      <item itemvalue="JUnit.RandomNumberDemoTest.test" />
+      <item itemvalue="JUnit.TestWatcherDemoTest" />
+      <item itemvalue="Remote JVM Debug.RemoteJunit5" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ParallelTestExample" />
+        <item itemvalue="JUnit.TestWatcherDemoTest" />
+        <item itemvalue="JUnit.RandomNumberDemoTest.test" />
+        <item itemvalue="JUnit.ExtensionTest.testExtension" />
+        <item itemvalue="JUnit.ProgrammingExtensionTest.extensionExample" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="31adfc30-fd1c-4684-8fe0-d2053a588098" name="Changes" comment="" />
+      <created>1717533021381</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717533021381</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestResultProcessingExtension.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/AssumptionsDemo.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
