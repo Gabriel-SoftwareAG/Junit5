@@ -1,3 +1,20 @@
+/*
+ * (C) Copyright 2024 VeriSoft (http://www.verisoft.co)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package ai.verisoft;
 
 import org.junit.jupiter.api.Assertions;
@@ -22,11 +39,13 @@ public class ParameterizationTest {
         Assertions.assertEquals(candidate, 2);
     }
 
+
     @ParameterizedTest
     @ValueSource(strings = { "alpha", "beta", "charly" })
     void palindromes(String candidate) {
         Assertions.assertEquals(candidate.length(), 5);
     }
+
 
     @ParameterizedTest
     @EnumSource(ChronoUnit.class)
@@ -34,15 +53,18 @@ public class ParameterizationTest {
         assertNotNull(unit);
     }
 
+
     @ParameterizedTest
     @MethodSource("stringProvider")
     void testWithExplicitLocalMethodSource(String argument) {
         assertNotNull(argument);
     }
 
+
     static Stream<String> stringProvider() {
         return Stream.of("apple", "banana");
     }
+
 
     @ParameterizedTest
     @MethodSource("range")
@@ -50,9 +72,11 @@ public class ParameterizationTest {
         assertNotEquals(9, argument);
     }
 
+
     static IntStream range() {
         return IntStream.range(0, 20).skip(10);
     }
+
 
     @ParameterizedTest
     @MethodSource("stringIntAndListProvider")
@@ -62,12 +86,14 @@ public class ParameterizationTest {
         assertEquals(2, list.size());
     }
 
+
     static Stream<Arguments> stringIntAndListProvider() {
         return Stream.of(
                 arguments("apple", 1, Arrays.asList("a", "b")),
                 arguments("lemon", 2, Arrays.asList("x", "y"))
         );
     }
+
 
     @ParameterizedTest
     @CsvSource({
@@ -81,10 +107,10 @@ public class ParameterizationTest {
         assertNotEquals(0, rank);
     }
 
+
     @ParameterizedTest
     @ArgumentsSource(MyArgumentsProvider.class)
     void testWithArgumentsSource(String argument) {
         assertNotNull(argument);
     }
-
 }

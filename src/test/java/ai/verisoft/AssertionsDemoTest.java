@@ -1,3 +1,20 @@
+/*
+ * (C) Copyright 2024 VeriSoft (http://www.verisoft.co)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package ai.verisoft;
 
 import org.junit.jupiter.api.Test;
@@ -8,11 +25,12 @@ import static java.time.Duration.ofMillis;
 import static java.time.Duration.ofMinutes;
 import static org.junit.jupiter.api.Assertions.*;
 
-class AssertionsDemo {
+class AssertionsDemoTest {
 
     private final Calculator calculator = new Calculator();
 
     private final Person person = new Person("Jane", "Doe");
+
 
     @Test
     void standardAssertions() {
@@ -23,6 +41,7 @@ class AssertionsDemo {
                 + "to avoid constructing complex messages unnecessarily.");
     }
 
+
     @Test
     void groupedAssertions() {
         // In a grouped assertion all assertions are executed, and all
@@ -32,6 +51,7 @@ class AssertionsDemo {
                 () -> assertEquals("Doe", person.getLastName())
         );
     }
+
 
     @Test
     void dependentAssertions() {
@@ -63,12 +83,14 @@ class AssertionsDemo {
         );
     }
 
+
     @Test
     void exceptionTesting() {
         Exception exception = assertThrows(ArithmeticException.class, () ->
                 calculator.divide(1, 0));
         assertEquals("/ by zero", exception.getMessage());
     }
+
 
     @Test
     void timeoutNotExceeded() {
@@ -77,6 +99,7 @@ class AssertionsDemo {
             // Perform task that takes less than 2 minutes.
         });
     }
+
 
     @Test
     void timeoutNotExceededWithResult() {
@@ -87,12 +110,14 @@ class AssertionsDemo {
         assertEquals("a result", actualResult);
     }
 
+
     @Test
     void timeoutNotExceededWithMethod() {
         // The following assertion invokes a method reference and returns an object.
-        String actualGreeting = assertTimeout(ofMinutes(2), AssertionsDemo::greeting);
+        String actualGreeting = assertTimeout(ofMinutes(2), AssertionsDemoTest::greeting);
         assertEquals("Hello, World!", actualGreeting);
     }
+
 
     @Test
     void timeoutExceeded() {
@@ -104,6 +129,7 @@ class AssertionsDemo {
         });
     }
 
+
     @Test
     void timeoutExceededWithPreemptiveTermination() {
         // The following assertion fails with an error message similar to:
@@ -114,8 +140,8 @@ class AssertionsDemo {
         });
     }
 
+
     private static String greeting() {
         return "Hello, World!";
     }
-
 }

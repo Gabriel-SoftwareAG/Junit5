@@ -1,3 +1,20 @@
+/*
+ * (C) Copyright 2024 VeriSoft (http://www.verisoft.co)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package ai.verisoft;
 
 public class NumericalUtilities {
@@ -6,29 +23,36 @@ public class NumericalUtilities {
         return a + b;
     }
 
+
     public static int subtract(int a, int b) {
         return a - b;
     }
+
 
     public static int multiply(int a, int b) {
         return a * b;
     }
 
+
     public static int divide(int a, int b) {
         return a / b;
     }
+
 
     public static int modulo(int a, int b) {
         return a % b;
     }
 
+
     public static boolean isEven(int a) {
         return a % 2 == 0;
     }
 
+
     public static boolean isOdd(int a) {
         return a % 2 != 0;
     }
+
 
     public static boolean isPrime(int a) {
         if (a < 2) {
@@ -42,6 +66,7 @@ public class NumericalUtilities {
         return true;
     }
 
+
     public static int factorial(int a) {
         if (a < 0) {
             throw new IllegalArgumentException("Factorial is not defined for negative numbers");
@@ -52,6 +77,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int fibonacci(int a) {
         if (a < 0) {
@@ -73,6 +99,7 @@ public class NumericalUtilities {
         return second;
     }
 
+
     public static int gcd(int a, int b) {
         if (a < 0 || b < 0) {
             throw new IllegalArgumentException("GCD is not defined for negative numbers");
@@ -85,12 +112,14 @@ public class NumericalUtilities {
         return a;
     }
 
-    public static int lcm(int a , int b) {
+
+    public static int lcm(int a, int b) {
         if (a < 0 || b < 0) {
             throw new IllegalArgumentException("LCM is not defined for negative numbers");
         }
         return a * b / gcd(a, b);
     }
+
 
     public static int power(int a, int b) {
         if (b < 0) {
@@ -103,6 +132,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int sqrt(int a) {
         if (a < 0) {
             throw new IllegalArgumentException("Square root is not defined for negative numbers");
@@ -113,6 +143,7 @@ public class NumericalUtilities {
         }
         return result - 1;
     }
+
 
     public static int log(int a, int b) {
         if (a < 0 || b < 0 || b == 1) {
@@ -126,17 +157,21 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int abs(int a) {
         return a < 0 ? -a : a;
     }
+
 
     public static int max(int a, int b) {
         return a > b ? a : b;
     }
 
+
     public static int min(int a, int b) {
         return a < b ? a : b;
     }
+
 
     public static int sum(int[] a) {
         int result = 0;
@@ -146,6 +181,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int product(int[] a) {
         int result = 1;
         for (int i = 0; i < a.length; i++) {
@@ -153,6 +189,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int max(int[] a) {
         int result = a[0];
@@ -164,6 +201,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int min(int[] a) {
         int result = a[0];
         for (int i = 1; i < a.length; i++) {
@@ -173,6 +211,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int[] sort(int[] a) {
         int[] result = new int[a.length];
@@ -191,6 +230,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] reverse(int[] a) {
         int[] result = new int[a.length];
         for (int i = 0; i < a.length; i++) {
@@ -199,6 +239,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] copy(int[] a) {
         int[] result = new int[a.length];
         for (int i = 0; i < a.length; i++) {
@@ -206,6 +247,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int[] merge(int[] a, int[] b) {
         int[] result = new int[a.length + b.length];
@@ -218,6 +260,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] slice(int[] a, int start, int end) {
         if (start < 0 || start >= a.length || end < 0 || end > a.length || start >= end) {
             throw new IllegalArgumentException("Invalid start or end index");
@@ -228,6 +271,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int[] filter(int[] a, int value) {
         int count = 0;
@@ -247,6 +291,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] map(int[] a, int value) {
         int[] result = new int[a.length];
         for (int i = 0; i < a.length; i++) {
@@ -255,13 +300,15 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] reduce(int[] a, int value) {
         int result = value;
         for (int i = 0; i < a.length; i++) {
             result += a[i];
         }
-        return new int[] {result};
+        return new int[]{result};
     }
+
 
     public static int[] rotate(int[] a, int value) {
         int[] result = new int[a.length];
@@ -270,6 +317,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int[] shuffle(int[] a) {
         int[] result = new int[a.length];
@@ -285,6 +333,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] reverse(int[] a, int start, int end) {
         if (start < 0 || start >= a.length || end < 0 || end > a.length || start >= end) {
             throw new IllegalArgumentException("Invalid start or end index");
@@ -299,6 +348,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] copy(int[] a, int start, int end) {
         if (start < 0 || start >= a.length || end < 0 || end > a.length || start >= end) {
             throw new IllegalArgumentException("Invalid start or end index");
@@ -309,6 +359,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int[] merge(int[] a, int[] b, int start, int end) {
         if (start < 0 || start >= a.length || end < 0 || end > a.length || start >= end) {
@@ -327,6 +378,7 @@ public class NumericalUtilities {
         return result;
     }
 
+
     public static int[] slice(int[] a, int start, int end, int step) {
         if (start < 0 || start >= a.length || end < 0 || end > a.length || start >= end || step <= 0) {
             throw new IllegalArgumentException("Invalid start, end or step index");
@@ -343,6 +395,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int[] filter(int[] a, int value, int start, int end) {
         if (start < 0 || start >= a.length || end < 0 || end > a.length || start >= end) {
@@ -364,6 +417,7 @@ public class NumericalUtilities {
         }
         return result;
     }
+
 
     public static int[] map(int[] a, int value, int start, int end) {
         if (start < 0 || start >= a.length || end < 0 || end > a.length || start >= end) {

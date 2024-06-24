@@ -1,3 +1,20 @@
+/*
+ * (C) Copyright 2024 VeriSoft (http://www.verisoft.co)
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * See the NOTICE file distributed with this work for additional
+ * information regarding copyright ownership.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package ai.verisoft.extensions;
 
 import java.lang.reflect.Method;
@@ -13,10 +30,12 @@ public class TimingExtension implements BeforeTestExecutionCallback, AfterTestEx
 
     private static final String START_TIME = "start time";
 
+
     @Override
     public void beforeTestExecution(ExtensionContext context) throws Exception {
         getStore(context).put(START_TIME, System.currentTimeMillis());
     }
+
 
     @Override
     public void afterTestExecution(ExtensionContext context) throws Exception {
@@ -28,8 +47,8 @@ public class TimingExtension implements BeforeTestExecutionCallback, AfterTestEx
                 String.format("Method [%s] took %s ms.", testMethod.getName(), duration));
     }
 
+
     private Store getStore(ExtensionContext context) {
         return context.getStore(Namespace.create(getClass(), context.getRequiredTestMethod()));
     }
-
 }
