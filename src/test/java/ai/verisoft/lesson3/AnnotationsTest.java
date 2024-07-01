@@ -15,21 +15,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson3;
 
 import org.junit.jupiter.api.*;
 
-public class LifeCycleAnnotationTest {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+@Tag("MyTag")
+public class AnnotationsTest {
 
     @BeforeAll
     public static void beforeAll() {
         System.out.println("In the before all tests");
-    }
-
-
-    @AfterAll
-    public static void afterAll() {
-        System.out.println("In the after all tests");
     }
 
 
@@ -45,15 +42,22 @@ public class LifeCycleAnnotationTest {
     }
 
 
+    @AfterAll
+    public static void afterAll() {
+        System.out.println("In the after all tests");
+    }
+
+
     @Test
-    public void test1() {
-        System.out.println("test #1");
+    public void ThisTestWillPass() {
+        System.out.println("This test will pass");
+        Assertions.assertTrue(true);
     }
 
 
     @Test
     public void test2() {
-        System.out.println("test #2");
-        Assertions.assertTrue(false);
+        System.out.println("This test will fail");
+        assertEquals(1, 2);
     }
 }

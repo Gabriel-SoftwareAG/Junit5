@@ -15,12 +15,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson4;
 
-public class Main {
+import org.junit.jupiter.api.extension.ExtensionContext;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.ArgumentsProvider;
 
-    public static void main(String[] args) {
-        int result = NumericalUtilities.divide(10, 2);
-        System.out.println(result);
+import java.util.stream.Stream;
+
+public class MyArgumentsProvider implements ArgumentsProvider {
+
+    @Override
+    public Stream<? extends Arguments> provideArguments(ExtensionContext context) {
+        return Stream.of("apple", "banana").map(Arguments::of);
     }
 }

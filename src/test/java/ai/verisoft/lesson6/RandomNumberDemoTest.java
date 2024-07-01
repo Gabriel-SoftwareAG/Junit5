@@ -15,11 +15,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson6;
 
+import ai.verisoft.lesson6.Random;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.RegisterExtension;
 
 public class RandomNumberDemoTest {
     // Use static randomNumber0 field anywhere in the test class,

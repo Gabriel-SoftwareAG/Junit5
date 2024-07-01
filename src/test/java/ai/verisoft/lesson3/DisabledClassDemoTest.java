@@ -15,30 +15,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson3;
 
-
-import ai.verisoft.extensions.ExtensionExample;
-import ai.verisoft.extensions.HandlingContextExtension;
-import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.jupiter.api.extension.RegisterExtension;
 
-//@ExtendWith(ExtensionExample.class)
-//@DatabaseAndWebServerExtension
-@ExtendWith({/*TestResultProcessingExtension.class,*/ HandlingContextExtension.class})
-@Tag("test-result-processing-test")
-public class ExtensionTest {
-
-    @RegisterExtension
-    static ExtensionExample extensionExample = new ExtensionExample();
+@Disabled("Disabled until bug #99 has been fixed")
+public class DisabledClassDemoTest {
 
     @Test
-    @Tag("Regression")
-    @DisplayName("This is a test with an extension")
-    public void testExtension() {
-        System.out.println("This is a test with an extension");
+    @Tag("Sanity")
+    void testWillBeSkipped() {
+    }
+
+    @Test
+    void testWillAlsoBeSkipped() {
     }
 }

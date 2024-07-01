@@ -15,18 +15,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson4;
 
 import org.junit.jupiter.api.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-@Tag("MyTag")
-public class AnnotationsTest {
+public class LifeCycleAnnotationTest {
 
     @BeforeAll
     public static void beforeAll() {
         System.out.println("In the before all tests");
+    }
+
+
+    @AfterAll
+    public static void afterAll() {
+        System.out.println("In the after all tests");
     }
 
 
@@ -42,37 +45,15 @@ public class AnnotationsTest {
     }
 
 
-    @AfterAll
-    public static void afterAll() {
-        System.out.println("In the after all tests");
-    }
-
-
     @Test
-    public void ThisTestWillPass() {
-        System.out.println("This test will pass");
-        Assertions.assertTrue(true);
+    public void test1() {
+        System.out.println("test #1");
     }
 
 
     @Test
     public void test2() {
-        System.out.println("This test will fail");
-        assertEquals(1, 2);
-    }
-
-
-    @Test
-    @Tag("MyTag")
-    public void externalParameterTest() {
-        String parameter = System.getProperty("parameter");
-        System.out.println("Parameter value: " + parameter);
-        assertEquals("MyParameter", parameter);
-    }
-
-
-    @FastTest
-    public void testFast() {
-        System.out.println("This is a fast test");
+        System.out.println("test #2");
+        Assertions.assertTrue(false);
     }
 }

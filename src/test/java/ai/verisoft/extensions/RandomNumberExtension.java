@@ -20,7 +20,7 @@ package ai.verisoft.extensions;
 import java.lang.reflect.Field;
 import java.util.function.Predicate;
 
-import ai.verisoft.Random;
+import ai.verisoft.lesson6.Random;
 import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;

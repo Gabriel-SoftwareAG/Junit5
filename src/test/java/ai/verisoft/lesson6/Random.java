@@ -15,33 +15,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson6;
 
-import org.junit.jupiter.api.*;
+import ai.verisoft.extensions.RandomNumberExtension;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-public class DependencyInjectionTests {
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
-    @BeforeEach
-    public void beforeEach(TestInfo testInfo) {
-        System.out.println(testInfo.getDisplayName());
-    }
-
-
-    @AfterEach
-    public void after(TestReporter reporter) {
-        reporter.publishEntry("a key", "a value");
-    }
-
-
-    @Test
-    public void test1(TestReporter reporter) {
-        reporter.publishEntry("a key", "a value");
-        //System.out.println(testInfo.getDisplayName());
-    }
-
-
-    @RepeatedTest(3)
-    public void test2(RepetitionInfo info) {
-        System.out.println(info.getCurrentRepetition());
-    }
+@Target({ ElementType.FIELD, ElementType.PARAMETER })
+@Retention(RetentionPolicy.RUNTIME)
+@ExtendWith(RandomNumberExtension.class)
+public @interface Random {
 }

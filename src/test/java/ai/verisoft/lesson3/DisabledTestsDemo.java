@@ -15,23 +15,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson3;
 
-import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-public class FirstExampleTest {
+public class DisabledTestsDemo {
 
+    @Disabled("Disabled until bug #42 has been resolved")
     @Test
-    public void testDivide() {
-        int result = NumericalUtilities.divide(10, 2);
-        Assertions.assertEquals(5, result);
+    void testWillBeSkipped() {
     }
 
-    public static <T extends Number> double divide(T numerator, T denominator) throws IllegalArgumentException {
-        if (denominator.doubleValue() == 0) {
-            throw new IllegalArgumentException("Cannot divide by zero");
-        }
-        return numerator.doubleValue() / denominator.doubleValue();
+    @Test
+    void testWillBeExecuted() {
     }
 }

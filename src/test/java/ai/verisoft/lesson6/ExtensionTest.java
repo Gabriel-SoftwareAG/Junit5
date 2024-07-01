@@ -15,19 +15,30 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson6;
 
+
+import ai.verisoft.extensions.ExtensionExample;
+import ai.verisoft.extensions.HandlingContextExtension;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.extension.RegisterExtension;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+//@ExtendWith(ExtensionExample.class)
+//@DatabaseAndWebServerExtension
+@ExtendWith({/*TestResultProcessingExtension.class,*/ HandlingContextExtension.class})
+@Tag("test-result-processing-test")
+public class ExtensionTest {
 
-@Target(ElementType.METHOD)
-@Retention(RetentionPolicy.RUNTIME)
-@Tag("fast")
-@Test
-public @interface FastTest {
+    @RegisterExtension
+    static ExtensionExample extensionExample = new ExtensionExample();
+
+    @Test
+    @Tag("Regression")
+    @DisplayName("This is a test with an extension")
+    public void testExtension() {
+        System.out.println("This is a test with an extension");
+    }
 }

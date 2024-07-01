@@ -15,18 +15,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson5;
 
-import ai.verisoft.extensions.RandomNumberExtension;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
 
-@Target({ ElementType.FIELD, ElementType.PARAMETER })
-@Retention(RetentionPolicy.RUNTIME)
-@ExtendWith(RandomNumberExtension.class)
-public @interface Random {
+@Execution(ExecutionMode.CONCURRENT)
+public class ParallelTestExample {
+
+    @Test
+    public void test1() throws InterruptedException {
+        System.out.println("test #1");
+        Thread.sleep(1000);
+    }
+
+
+    @Test
+    public void test2() throws InterruptedException {
+        System.out.println("test #2");
+        Thread.sleep(400);
+    }
 }

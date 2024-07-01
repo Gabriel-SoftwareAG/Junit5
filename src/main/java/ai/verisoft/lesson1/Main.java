@@ -15,18 +15,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson1;
 
-import org.junit.jupiter.api.extension.ExtensionContext;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.ArgumentsProvider;
+public class Main {
 
-import java.util.stream.Stream;
+    public static void main(String[] args) {
+        int result = NumericalUtilities.divide(10, 2);
+        if (result != 5) {
+            throw new RuntimeException("Division result is not correct");
+        }
+        System.out.println("Division result is: " + result);
 
-public class MyArgumentsProvider implements ArgumentsProvider {
-
-    @Override
-    public Stream<? extends Arguments> provideArguments(ExtensionContext context) {
-        return Stream.of("apple", "banana").map(Arguments::of);
+        result = NumericalUtilities.divide(10, 0);
+        if (result != 5) {
+            throw new RuntimeException("Division result is not correct");
+        }
+        System.out.println("Division result is: " + result);
     }
 }

@@ -15,12 +15,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson3;
 
 import org.junit.jupiter.api.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 public class BasicAnnotationsTest {
+
+
+    @RepeatedTest(3)
+    public void testRepeated() {
+        System.out.println("This is a repeated test");
+    }
 
 
     @Test
@@ -37,6 +43,7 @@ public class BasicAnnotationsTest {
     }
 
 
+
     @Test
     @DisplayName("This is a test with a display name")
     public void testDisplayName() {
@@ -46,7 +53,6 @@ public class BasicAnnotationsTest {
 
     @Test
     @Tag("Sanity")
-    @Disabled
     public void testWithTag() {
         System.out.println("This is a test with a tag");
     }
@@ -70,6 +76,13 @@ public class BasicAnnotationsTest {
     @Test
     @Timeout(1)
     public void testTimeout() throws InterruptedException {
-        Thread.sleep(1200);
+        Thread.sleep(800);
+    }
+
+
+    @Test
+    @Disabled
+    public void testDisabled() {
+        System.out.println("This is a disabled test");
     }
 }

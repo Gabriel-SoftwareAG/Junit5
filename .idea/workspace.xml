@@ -5,46 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31adfc30-fd1c-4684-8fe0-d2053a588098" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AssertJDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/MetaAnnotationDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson5/ExternalParameterDemoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ai/verisoft/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ai/verisoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ai/verisoft/NumericalUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/NumericalUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ai/verisoft/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/AnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/AnnotationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssertionsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssertionsDemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssumptionsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssumptionsDemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/BasicAnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/BasicAnnotationsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ConditionalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ConditionalTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/DependencyInjectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/DependencyInjectionTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledClassDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledClassDemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledTestsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledTestsDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ExtensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ExtensionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/FastTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/FastTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/FirstExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/FirstExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/LifeCycleAnnotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/LifeCycleAnnotationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/MyArgumentsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/MyArgumentsProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/NativeDITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/NativeDITests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParallelTestExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParallelTestExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParameterizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParameterizationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ProgrammingExtensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/ProgrammingExtensionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/Random.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/RandomNumberDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/RandomNumberDemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestLifecycleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestLifecycleLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestWatcherDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestWatcherDemoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/DatabaseAndWebServerExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/DatabaseAndWebServerExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/DatabaseExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/DatabaseExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/ExtensionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/ExtensionExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/HandlingContextExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/HandlingContextExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/IgnoreIOExceptionExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/IgnoreIOExceptionExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/ParameterResolverDemoExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/ParameterResolverDemoExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ai/verisoft/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/lesson1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ai/verisoft/NumericalUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/lesson1/NumericalUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/AnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AnnotationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssertionsDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AssertionsDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/AssumptionsDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/AssumptionsDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/BasicAnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/BasicAnnotationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ConditionalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/ConditionalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/DependencyInjectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/DependencyInjectionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledClassDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/DisabledClassDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/DisabledTestsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/DisabledTestsDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ExtensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/ExtensionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/FastTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/FastTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/FirstExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson2/FirstExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/LifeCycleAnnotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/LifeCycleAnnotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/MyArgumentsProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/MyArgumentsProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/NativeDITests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/NativeDITests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParallelTestExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson5/ParallelTestExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ParameterizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/ParameterizationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/ProgrammingExtensionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/ProgrammingExtensionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/Random.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/RandomNumberDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/RandomNumberDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestLifecycleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/TestLifecycleLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/TestWatcherDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/TestWatcherDemoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RandomNumberExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RandomNumberExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RecordStateOnErrorExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RecordStateOnErrorExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/SuiteLevelExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/SuiteLevelExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestResultProcessingExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestResultProcessingExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TimingExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TimingExtension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/WebServerExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/WebServerExtension.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,81 +85,79 @@
       <recent name="ai.verisoft" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParallelTestExample">
-    <configuration name="ExtensionTest.testExtension" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DisabledClassDemoTest">
+    <configuration name="BasicAnnotationsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.extensions.*" />
+          <option name="PATTERN" value="ai.verisoft.lesson3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.ExtensionTest" />
-      <option name="METHOD_NAME" value="testExtension" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParallelTestExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Junit5-Course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ai.verisoft.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.ParallelTestExample" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson3" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson3.BasicAnnotationsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProgrammingExtensionTest.extensionExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicAnnotationsTest.testTimeout" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.extensions.*" />
+          <option name="PATTERN" value="ai.verisoft.lesson3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.ProgrammingExtensionTest" />
-      <option name="METHOD_NAME" value="extensionExample" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson3" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson3.BasicAnnotationsTest" />
+      <option name="METHOD_NAME" value="testTimeout" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RandomNumberDemoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DisabledClassDemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.extensions.*" />
+          <option name="PATTERN" value="ai.verisoft.lesson3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.RandomNumberDemoTest" />
-      <option name="METHOD_NAME" value="test(int)" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson3" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson3.DisabledClassDemoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DisabledClassDemoTest.testWillBeSkipped" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.lesson3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson3" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson3.DisabledClassDemoTest" />
+      <option name="METHOD_NAME" value="testWillBeSkipped" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestWatcherDemoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DisabledTestsDemo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.*" />
+          <option name="PATTERN" value="ai.verisoft.lesson3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.TestWatcherDemoTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson3" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson3.DisabledTestsDemo" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -202,20 +189,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParallelTestExample" />
-      <item itemvalue="JUnit.ExtensionTest.testExtension" />
-      <item itemvalue="JUnit.ProgrammingExtensionTest.extensionExample" />
-      <item itemvalue="JUnit.RandomNumberDemoTest.test" />
-      <item itemvalue="JUnit.TestWatcherDemoTest" />
+      <item itemvalue="JUnit.BasicAnnotationsTest" />
+      <item itemvalue="JUnit.BasicAnnotationsTest.testTimeout" />
+      <item itemvalue="JUnit.DisabledClassDemoTest" />
+      <item itemvalue="JUnit.DisabledClassDemoTest.testWillBeSkipped" />
+      <item itemvalue="JUnit.DisabledTestsDemo" />
       <item itemvalue="Remote JVM Debug.RemoteJunit5" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParallelTestExample" />
-        <item itemvalue="JUnit.TestWatcherDemoTest" />
-        <item itemvalue="JUnit.RandomNumberDemoTest.test" />
-        <item itemvalue="JUnit.ExtensionTest.testExtension" />
-        <item itemvalue="JUnit.ProgrammingExtensionTest.extensionExample" />
+        <item itemvalue="JUnit.DisabledClassDemoTest" />
+        <item itemvalue="JUnit.DisabledClassDemoTest.testWillBeSkipped" />
+        <item itemvalue="JUnit.DisabledTestsDemo" />
+        <item itemvalue="JUnit.BasicAnnotationsTest.testTimeout" />
+        <item itemvalue="JUnit.BasicAnnotationsTest" />
       </list>
     </recent_temporary>
   </component>

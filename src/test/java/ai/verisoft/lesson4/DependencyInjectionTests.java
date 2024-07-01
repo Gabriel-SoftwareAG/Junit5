@@ -15,26 +15,33 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson4;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.api.parallel.ExecutionMode;
+import org.junit.jupiter.api.*;
+
+public class DependencyInjectionTests {
+
+    @BeforeEach
+    public void beforeEach(TestInfo testInfo) {
+        System.out.println(testInfo.getDisplayName());
+    }
 
 
-@Execution(ExecutionMode.CONCURRENT)
-public class ParallelTestExample {
-
-    @Test
-    public void test1() throws InterruptedException {
-        System.out.println("test #1");
-        Thread.sleep(1000);
+    @AfterEach
+    public void after(TestReporter reporter) {
+        reporter.publishEntry("a key", "a value");
     }
 
 
     @Test
-    public void test2() throws InterruptedException {
-        System.out.println("test #2");
-        Thread.sleep(400);
+    public void test1(TestReporter reporter) {
+        reporter.publishEntry("a key", "a value");
+        //System.out.println(testInfo.getDisplayName());
+    }
+
+
+    @RepeatedTest(3)
+    public void test2(RepetitionInfo info) {
+        System.out.println(info.getCurrentRepetition());
     }
 }

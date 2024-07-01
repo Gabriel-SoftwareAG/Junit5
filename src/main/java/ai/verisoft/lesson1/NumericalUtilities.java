@@ -15,8 +15,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft;
+package ai.verisoft.lesson1;
 
+/**
+ * A bunch of numerical utilities, for use during the course.
+ * @author Nir Gallner
+ */
 public class NumericalUtilities {
 
     public static int add(int a, int b) {
