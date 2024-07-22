@@ -56,7 +56,7 @@ public class AnnotationsTest {
 
 
     @Test
-    public void test2() {
+    public void ThisTestWillFail() {
         System.out.println("This test will fail");
         assertEquals(1, 2);
     }

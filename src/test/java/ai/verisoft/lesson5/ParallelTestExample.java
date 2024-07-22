@@ -20,21 +20,24 @@ package ai.verisoft.lesson5;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 
 @Execution(ExecutionMode.CONCURRENT)
 public class ParallelTestExample {
 
-    @Test
-    public void test1() throws InterruptedException {
-        System.out.println("test #1");
-        Thread.sleep(1000);
+    @ParameterizedTest
+    @ValueSource(ints = { 1, 2, 3 })
+    public void test1(int x) throws InterruptedException {
+        System.out.println("test #1 " + x);
+        Thread.sleep(5000);
     }
 
 
     @Test
     public void test2() throws InterruptedException {
         System.out.println("test #2");
-        Thread.sleep(400);
+        Thread.sleep(3000);
     }
 }

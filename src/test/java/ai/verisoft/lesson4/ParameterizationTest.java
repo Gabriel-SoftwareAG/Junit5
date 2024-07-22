@@ -18,6 +18,8 @@
 package ai.verisoft.lesson4;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 
@@ -62,7 +64,7 @@ public class ParameterizationTest {
 
 
     static Stream<String> stringProvider() {
-        return Stream.of("apple", "banana");
+        return Stream.of("apple", "banana", "charly");
     }
 
 
@@ -78,7 +80,7 @@ public class ParameterizationTest {
     }
 
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "#{index} - Run test with argument={0}")
     @MethodSource("stringIntAndListProvider")
     void testWithMultiArgMethodSource(String str, int num, List<String> list) {
         assertEquals(5, str.length());
