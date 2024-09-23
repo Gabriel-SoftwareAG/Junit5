@@ -15,37 +15,36 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft.lesson4;
+package ai.verisoft.extensions;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Tag;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 
-import java.util.logging.Logger;
+import static org.junit.jupiter.api.Assertions.fail;
 
-public interface TestLifecycleLogger {
-    Logger logger = Logger.getLogger(TestLifecycleLogger.class.getName());
+public class LogTests {
 
-    @BeforeAll
-    default void beforeAllTests() {
-        logger.info("Before all tests");
+    public LogTests() {
+        System.out.println("This is constructor");
     }
-
-
-    @AfterAll
-    default void afterAllTests() {
-        logger.info("After all tests");
-    }
-
 
     @BeforeEach
-    default void beforeEachTest(TestInfo testInfo) {
-        logger.info(() -> String.format("About to execute [%s]",
-                testInfo.getDisplayName()));
+    public void setup() {
+        System.out.println("This is before each");
     }
 
+    @Test
+    @Tag("slow")
+    @ExtendWith(LogExtension.class)
+    public void test1() {
+        System.out.println("This is test #1");
+        fail("This test has failed because of reasons");
+    }
 
-    @AfterEach
-    default void afterEachTest(TestInfo testInfo) {
-        logger.info(() -> String.format("Finished executing [%s]",
-                testInfo.getDisplayName()));
+    @Test
+    public void test2() {
+        System.out.println("This is test #2");
     }
 }

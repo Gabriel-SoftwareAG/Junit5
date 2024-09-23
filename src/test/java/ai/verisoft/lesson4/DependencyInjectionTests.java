@@ -39,9 +39,25 @@ public class DependencyInjectionTests {
         //System.out.println(testInfo.getDisplayName());
     }
 
+    @Test
+    @Tag("FastTest")
+    @DisplayName("A very fast test")
+    public void test2(TestInfo testInfo) {
+        System.out.println(testInfo.getDisplayName());
+        System.out.println(testInfo.getTestClass().toString());
+        System.out.println(testInfo.getTestMethod().toString());
+        System.out.println(testInfo.getTags().toString());
+
+    }
+
 
     @RepeatedTest(3)
     public void test2(RepetitionInfo info) {
-        System.out.println(info.getCurrentRepetition());
+        System.out.println("This is repetition number " + info.getCurrentRepetition() + " out of "
+                + info.getTotalRepetitions() + " repetitions");
+
+        System.out.println("up till now there were " + info.getFailureCount() + " failed repetitions");
+
+        Assertions.assertEquals(2, info.getCurrentRepetition());
     }
 }

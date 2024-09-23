@@ -41,11 +41,13 @@ public class TestWatcherExtensionExample implements TestWatcher {
     @Override
     public void testAborted(ExtensionContext context, Throwable cause) {
         System.out.println("Test aborted: " + context.getDisplayName());
+
     }
 
 
     @Override
     public void testDisabled(ExtensionContext context, Optional<String> reason) {
         System.out.println("Test disabled: " + context.getDisplayName() + " with reason: " + reason.orElse("No reason"));
+
     }
 }

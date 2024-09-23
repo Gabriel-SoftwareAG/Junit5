@@ -17,7 +17,6 @@
  */
 package ai.verisoft.lesson6;
 
-import ai.verisoft.lesson6.Random;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -26,7 +25,6 @@ public class RandomNumberDemoTest {
     // including @BeforeAll or @AfterEach lifecycle methods.
     @Random
     private static Integer randomNumber0;
-
 
 
     // Use randomNumber1 field in test methods and @BeforeEach

@@ -17,35 +17,16 @@
  */
 package ai.verisoft.lesson4;
 
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-import java.util.logging.Logger;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public interface TestLifecycleLogger {
-    Logger logger = Logger.getLogger(TestLifecycleLogger.class.getName());
+public class TestInterfaceDemo implements TestLifecycleLogger {
 
-    @BeforeAll
-    default void beforeAllTests() {
-        logger.info("Before all tests");
-    }
-
-
-    @AfterAll
-    default void afterAllTests() {
-        logger.info("After all tests");
-    }
-
-
-    @BeforeEach
-    default void beforeEachTest(TestInfo testInfo) {
-        logger.info(() -> String.format("About to execute [%s]",
-                testInfo.getDisplayName()));
-    }
-
-
-    @AfterEach
-    default void afterEachTest(TestInfo testInfo) {
-        logger.info(() -> String.format("Finished executing [%s]",
-                testInfo.getDisplayName()));
+    @Test
+    @DisplayName("Just another test")
+    public void isEqualValue() {
+        assertEquals(2, 1 + 1);
     }
 }

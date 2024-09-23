@@ -15,18 +15,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft.lesson6;
+package ai.verisoft.lesson3;
 
-import ai.verisoft.extensions.RandomNumberExtension;
-import org.junit.jupiter.api.extension.ExtendWith;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+public class DisabledDemoTests {
 
-@Target({ElementType.FIELD, ElementType.PARAMETER})
-@Retention(RetentionPolicy.RUNTIME)
-@ExtendWith(RandomNumberExtension.class)
-public @interface Random {
+    @Disabled("Disabled until bug #42 has been resolved")
+    @Test
+    void testWillBeSkipped() {
+    }
+
+    @Test
+    void testWillBeExecuted() {
+    }
 }

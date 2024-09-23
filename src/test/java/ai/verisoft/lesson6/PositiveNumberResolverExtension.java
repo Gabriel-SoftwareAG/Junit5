@@ -15,28 +15,22 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft.extensions;
+package ai.verisoft.lesson6;
 
-import org.junit.jupiter.api.extension.BeforeAllCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
+import org.junit.jupiter.api.extension.ParameterContext;
+import org.junit.jupiter.api.extension.ParameterResolutionException;
+import org.junit.jupiter.api.extension.ParameterResolver;
 
-public class SuiteLevelExtension implements BeforeAllCallback, ExtensionContext.Store.CloseableResource {
-
-    private static boolean didRun = false;
-
+public class PositiveNumberResolverExtension implements ParameterResolver {
     @Override
-    public void beforeAll(ExtensionContext extensionContext) throws Exception {
-
-        if (!didRun) {
-            extensionContext.getRoot().getStore(ExtensionContext.Namespace.GLOBAL).put("ExtensionCallback", this);
-            System.out.println("This is a suite level extension - beforeAll");
-            didRun = true;
-        }
+    public boolean supportsParameter(ParameterContext parameterContext, ExtensionContext extensionContext) throws ParameterResolutionException {
+        return parameterContext.getParameter().getType() == int.class;
     }
 
-
     @Override
-    public void close() {
-        System.out.println("This is a suite level extension - close");
+    public Object resolveParameter(ParameterContext parameterContext, ExtensionContext extensionContext) throws ParameterResolutionException {
+        java.util.Random random = new java.util.Random(System.nanoTime());
+        return random.nextInt(10);
     }
 }

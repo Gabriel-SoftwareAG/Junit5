@@ -27,6 +27,10 @@ public class LifeCycleAnnotationTest {
     }
 
 
+    public LifeCycleAnnotationTest() {
+        System.out.println("In the c-tor");
+    }
+
     @AfterAll
     public static void afterAll() {
         System.out.println("In the after all tests");

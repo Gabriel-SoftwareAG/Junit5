@@ -19,6 +19,7 @@ package ai.verisoft.lesson1;
 
 /**
  * A bunch of numerical utilities, for use during the course.
+ *
  * @author Nir Gallner
  */
 public class NumericalUtilities {
@@ -173,14 +174,14 @@ public class NumericalUtilities {
 
 
     public static int min(int a, int b) {
-        return a < b ? a : b;
+        return Math.min(a, b);
     }
 
 
     public static int sum(int[] a) {
         int result = 0;
-        for (int i = 0; i < a.length; i++) {
-            result += a[i];
+        for (int j : a) {
+            result += j;
         }
         return result;
     }
@@ -188,8 +189,8 @@ public class NumericalUtilities {
 
     public static int product(int[] a) {
         int result = 1;
-        for (int i = 0; i < a.length; i++) {
-            result *= a[i];
+        for (int j : a) {
+            result *= j;
         }
         return result;
     }
@@ -219,9 +220,7 @@ public class NumericalUtilities {
 
     public static int[] sort(int[] a) {
         int[] result = new int[a.length];
-        for (int i = 0; i < a.length; i++) {
-            result[i] = a[i];
-        }
+        System.arraycopy(a, 0, result, 0, a.length);
         for (int i = 0; i < result.length; i++) {
             for (int j = i + 1; j < result.length; j++) {
                 if (result[j] < result[i]) {
@@ -246,21 +245,15 @@ public class NumericalUtilities {
 
     public static int[] copy(int[] a) {
         int[] result = new int[a.length];
-        for (int i = 0; i < a.length; i++) {
-            result[i] = a[i];
-        }
+        System.arraycopy(a, 0, result, 0, a.length);
         return result;
     }
 
 
     public static int[] merge(int[] a, int[] b) {
         int[] result = new int[a.length + b.length];
-        for (int i = 0; i < a.length; i++) {
-            result[i] = a[i];
-        }
-        for (int i = 0; i < b.length; i++) {
-            result[a.length + i] = b[i];
-        }
+        System.arraycopy(a, 0, result, 0, a.length);
+        System.arraycopy(b, 0, result, a.length, b.length);
         return result;
     }
 
@@ -270,25 +263,23 @@ public class NumericalUtilities {
             throw new IllegalArgumentException("Invalid start or end index");
         }
         int[] result = new int[end - start];
-        for (int i = start; i < end; i++) {
-            result[i - start] = a[i];
-        }
+        System.arraycopy(a, start, result, 0, end - start);
         return result;
     }
 
 
     public static int[] filter(int[] a, int value) {
         int count = 0;
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] == value) {
+        for (int j : a) {
+            if (j == value) {
                 count++;
             }
         }
         int[] result = new int[count];
         int index = 0;
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] == value) {
-                result[index] = a[i];
+        for (int j : a) {
+            if (j == value) {
+                result[index] = j;
                 index++;
             }
         }
@@ -307,8 +298,8 @@ public class NumericalUtilities {
 
     public static int[] reduce(int[] a, int value) {
         int result = value;
-        for (int i = 0; i < a.length; i++) {
-            result += a[i];
+        for (int j : a) {
+            result += j;
         }
         return new int[]{result};
     }
@@ -325,9 +316,7 @@ public class NumericalUtilities {
 
     public static int[] shuffle(int[] a) {
         int[] result = new int[a.length];
-        for (int i = 0; i < a.length; i++) {
-            result[i] = a[i];
-        }
+        System.arraycopy(a, 0, result, 0, a.length);
         for (int i = 0; i < result.length; i++) {
             int j = (int) (Math.random() * result.length);
             int temp = result[i];
@@ -343,9 +332,7 @@ public class NumericalUtilities {
             throw new IllegalArgumentException("Invalid start or end index");
         }
         int[] result = new int[a.length];
-        for (int i = 0; i < a.length; i++) {
-            result[i] = a[i];
-        }
+        System.arraycopy(a, 0, result, 0, a.length);
         for (int i = start; i < end; i++) {
             result[i] = a[end - 1 - i];
         }
@@ -358,9 +345,7 @@ public class NumericalUtilities {
             throw new IllegalArgumentException("Invalid start or end index");
         }
         int[] result = new int[end - start];
-        for (int i = start; i < end; i++) {
-            result[i - start] = a[i];
-        }
+        System.arraycopy(a, start, result, start - start, end - start);
         return result;
     }
 
@@ -370,15 +355,9 @@ public class NumericalUtilities {
             throw new IllegalArgumentException("Invalid start or end index");
         }
         int[] result = new int[a.length + b.length];
-        for (int i = 0; i < start; i++) {
-            result[i] = a[i];
-        }
-        for (int i = 0; i < b.length; i++) {
-            result[start + i] = b[i];
-        }
-        for (int i = end; i < a.length; i++) {
-            result[b.length + i] = a[i];
-        }
+        System.arraycopy(a, 0, result, 0, start);
+        System.arraycopy(b, 0, result, start, b.length);
+        System.arraycopy(a, end, result, b.length + end, a.length - end);
         return result;
     }
 
@@ -428,9 +407,7 @@ public class NumericalUtilities {
             throw new IllegalArgumentException("Invalid start or end index");
         }
         int[] result = new int[a.length];
-        for (int i = 0; i < a.length; i++) {
-            result[i] = a[i];
-        }
+        System.arraycopy(a, 0, result, 0, a.length);
         for (int i = start; i < end; i++) {
             result[i] = a[i] * value;
         }

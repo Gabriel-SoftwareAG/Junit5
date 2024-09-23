@@ -25,6 +25,7 @@ import org.junit.jupiter.api.extension.BeforeTestExecutionCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.api.extension.ExtensionContext.Namespace;
 import org.junit.jupiter.api.extension.ExtensionContext.Store;
+
 public class TimingExtension implements BeforeTestExecutionCallback, AfterTestExecutionCallback {
     private static final Logger logger = Logger.getLogger(TimingExtension.class.getName());
 

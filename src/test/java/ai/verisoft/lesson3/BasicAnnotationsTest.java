@@ -43,7 +43,6 @@ public class BasicAnnotationsTest {
     }
 
 
-
     @Test
     @DisplayName("This is a test with a display name")
     public void testDisplayName() {

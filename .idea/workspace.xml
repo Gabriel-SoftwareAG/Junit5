@@ -5,10 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31adfc30-fd1c-4684-8fe0-d2053a588098" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/DB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/LogExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/LogTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/SoftAssertionDemoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/VeryFastTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/TestInterfaceDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/DbExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/ParameterResolverExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/PersonParameterResolverExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/PersonResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/PositiveNumberResolverExtension.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AnnotationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ai/verisoft/lesson1/NumericalUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/verisoft/lesson1/NumericalUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/PersonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/PersonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RandomNumberExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/RandomNumberExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/SuiteLevelExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/SuiteLevelExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestResultProcessingExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestResultProcessingExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TimingExtension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TimingExtension.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AssertJDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AssertJDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AssertionsDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AssertionsDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/BasicAnnotationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/BasicAnnotationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/DisabledTestsDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/DisabledDemoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/ConditionalTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/ConditionalTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/DependencyInjectionTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/DependencyInjectionTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/LifeCycleAnnotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/LifeCycleAnnotationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/MetaAnnotationDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/MetaAnnotationDemoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/ParameterizationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/ParameterizationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/TestLifecycleLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/TestLifecycleLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson5/ParallelTestExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ai/verisoft/lesson5/ParallelTestExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.junit.jupiter.api.extension.Extension" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/META-INF/services/org.junit.jupiter.api.extension.Extension" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/junit-platform.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +48,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="AnnotationType" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -61,81 +91,96 @@
       <recent name="ai.verisoft" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParallelTestExample">
-    <configuration name="ParallelTestExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ParameterResolverExampleTest.resolve">
+    <configuration name="ConditionalTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.lesson5.*" />
+          <option name="PATTERN" value="ai.verisoft.lesson4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft.lesson5" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson5.ParallelTestExample" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson4" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson4.ConditionalTests" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParameterizationTest.palindromes (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LogTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.lesson4.*" />
+          <option name="PATTERN" value="ai.verisoft.extensions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft.lesson4" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson4.ParameterizationTest" />
-      <option name="METHOD_NAME" value="palindromes(java.lang.String)" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.extensions" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.extensions.LogTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.extensions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft.extensions" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.extensions.LogTests" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParameterizationTest.testWithEnumSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParameterResolverExampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.lesson4.*" />
+          <option name="PATTERN" value="ai.verisoft.lesson6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft.lesson4" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson4.ParameterizationTest" />
-      <option name="METHOD_NAME" value="testWithEnumSource(java.time.temporal.TemporalUnit)" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson6" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson6.ParameterResolverExampleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParameterResolverExampleTest.resolve" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Junit5-Course" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.verisoft.lesson6.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson6" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson6.ParameterResolverExampleTest" />
+      <option name="METHOD_NAME" value="resolve(int)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParameterizationTest.testWithExplicitLocalMethodSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParameterResolverExampleTest.resolvePerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ai.verisoft.lesson4.*" />
+          <option name="PATTERN" value="ai.verisoft.lesson6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft.lesson4" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson4.ParameterizationTest" />
-      <option name="METHOD_NAME" value="testWithExplicitLocalMethodSource(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParameterizationTest.testWithMultiArgMethodSource" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Junit5-Course" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ai.verisoft.lesson4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ai.verisoft.lesson4" />
-      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson4.ParameterizationTest" />
-      <option name="METHOD_NAME" value="testWithMultiArgMethodSource(java.lang.String,int,java.util.List)" />
+      <option name="PACKAGE_NAME" value="ai.verisoft.lesson6" />
+      <option name="MAIN_CLASS_NAME" value="ai.verisoft.lesson6.ParameterResolverExampleTest" />
+      <option name="METHOD_NAME" value="resolvePerson(ai.verisoft.Person)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -152,35 +197,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoteJunit5" type="Remote">
+    <configuration name="Unnamed" type="Remote" nameIsGenerated="true">
       <module name="Junit5-Course" />
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" />
       <option name="HOST" value="localhost" />
-      <option name="PORT" value="5005" />
+      <option name="PORT" value="8000" />
       <option name="AUTO_RESTART" value="false" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="5005" />
+        <option name="DEBUG_PORT" value="8000" />
         <option name="LOCAL" value="false" />
       </RunnerSettings>
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParallelTestExample" />
-      <item itemvalue="JUnit.ParameterizationTest.palindromes (1)" />
-      <item itemvalue="JUnit.ParameterizationTest.testWithEnumSource" />
-      <item itemvalue="JUnit.ParameterizationTest.testWithExplicitLocalMethodSource" />
-      <item itemvalue="JUnit.ParameterizationTest.testWithMultiArgMethodSource" />
-      <item itemvalue="Remote JVM Debug.RemoteJunit5" />
+      <item itemvalue="JUnit.LogTests" />
+      <item itemvalue="JUnit.LogTests.test1" />
+      <item itemvalue="JUnit.ParameterResolverExampleTest" />
+      <item itemvalue="JUnit.ParameterResolverExampleTest.resolve" />
+      <item itemvalue="JUnit.ParameterResolverExampleTest.resolvePerson" />
+      <item itemvalue="Remote JVM Debug.Unnamed" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParallelTestExample" />
-        <item itemvalue="JUnit.ParameterizationTest.testWithMultiArgMethodSource" />
-        <item itemvalue="JUnit.ParameterizationTest.testWithExplicitLocalMethodSource" />
-        <item itemvalue="JUnit.ParameterizationTest.palindromes (1)" />
-        <item itemvalue="JUnit.ParameterizationTest.testWithEnumSource" />
+        <item itemvalue="JUnit.ParameterResolverExampleTest.resolve" />
+        <item itemvalue="JUnit.ParameterResolverExampleTest" />
+        <item itemvalue="JUnit.ParameterResolverExampleTest.resolvePerson" />
+        <item itemvalue="JUnit.LogTests.test1" />
+        <item itemvalue="JUnit.LogTests" />
       </list>
     </recent_temporary>
   </component>
@@ -199,11 +244,66 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/lesson4/DependencyInjectionTests.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/PersonResolver.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/PersonResolver.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/PersonTest.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/AssertionsDemoTest.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/lesson3/BasicAnnotationsTest.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/LogExtension.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/lesson6/ParameterResolverExampleTest.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ai/verisoft/extensions/TestWatcherExtensionExample.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.junit.jupiter.engine.extension.TestInfoParameterResolver$DefaultTestInfo" memberName="tags" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -17,16 +17,29 @@
  */
 package ai.verisoft.lesson6;
 
-import ai.verisoft.extensions.RandomNumberExtension;
+import ai.verisoft.Person;
+import org.junit.jupiter.api.Assumptions;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-@Target({ElementType.FIELD, ElementType.PARAMETER})
-@Retention(RetentionPolicy.RUNTIME)
-@ExtendWith(RandomNumberExtension.class)
-public @interface Random {
+@ExtendWith({PositiveNumberResolverExtension.class, PersonParameterResolverExtension.class})
+public class ParameterResolverExampleTest {
+
+
+    @Test
+    @Disabled
+    public void resolve(int positiveNumber) {
+        Assumptions.assumeTrue(false, "This test is disabled");
+        System.out.println("Resolved number: " + positiveNumber);
+        assert positiveNumber > 0;
+    }
+
+    @Test
+    public void resolvePerson(Person person) {
+        System.out.println("Resolved person: " + person);
+        assertNotNull(person);
+    }
 }

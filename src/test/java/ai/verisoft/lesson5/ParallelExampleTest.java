@@ -15,19 +15,26 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft.lesson3;
+package ai.verisoft.lesson5;
 
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
-public class DisabledTestsDemo {
 
-    @Disabled("Disabled until bug #42 has been resolved")
-    @Test
-    void testWillBeSkipped() {
+public class ParallelExampleTest {
+
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    public void test1(int x) throws InterruptedException {
+        System.out.println("test #1 " + x);
+        Thread.sleep(5000);
     }
 
+
     @Test
-    void testWillBeExecuted() {
+    public void test2() throws InterruptedException {
+        System.out.println("test #2");
+        Thread.sleep(3000);
     }
 }

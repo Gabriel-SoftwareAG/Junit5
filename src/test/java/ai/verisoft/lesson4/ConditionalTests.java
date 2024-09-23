@@ -16,7 +16,8 @@
  * limitations under the License.
  */
 package ai.verisoft.lesson4;
-import org.junit.jupiter.api.*;
+
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.condition.*;
 
 import static org.junit.jupiter.api.condition.OS.*;
@@ -31,7 +32,7 @@ public class ConditionalTests {
 
 
     @Test
-    @EnabledOnOs({ LINUX, MAC })
+    @EnabledOnOs({LINUX, MAC})
     void onLinuxOrMac() {
         System.out.println("This test will run on Linux or macOS");
     }
@@ -71,6 +72,12 @@ public class ConditionalTests {
         System.out.println("This test will only run on 64-bit architectures");
     }
 
+    @Test
+    @EnabledIfSystemProperty(named = "ENV", matches = "CI")
+    void onlyOnCITest() {
+        System.out.println("This test will only run on CI");
+    }
+
 
     @Test
     @DisabledIfSystemProperty(named = "ci-server", matches = "true")
@@ -101,6 +108,6 @@ public class ConditionalTests {
 
 
     boolean customCondition() {
-        return true;
+        return false;
     }
 }

@@ -17,16 +17,15 @@
  */
 package ai.verisoft.lesson6;
 
-import ai.verisoft.extensions.RandomNumberExtension;
-import org.junit.jupiter.api.extension.ExtendWith;
+import ai.verisoft.DB;
+import org.junit.jupiter.api.extension.BeforeEachCallback;
+import org.junit.jupiter.api.extension.ExtensionContext;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+public class DbExtension implements BeforeEachCallback {
+    @Override
+    public void beforeEach(ExtensionContext extensionContext) {
+        String dbType = extensionContext.getTestMethod().get().getAnnotation(DB.class).value();
 
-@Target({ElementType.FIELD, ElementType.PARAMETER})
-@Retention(RetentionPolicy.RUNTIME)
-@ExtendWith(RandomNumberExtension.class)
-public @interface Random {
+        // Load configuration according to dbType
+    }
 }

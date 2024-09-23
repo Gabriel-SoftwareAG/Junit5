@@ -15,18 +15,29 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft.lesson6;
+package ai.verisoft.lesson3;
 
-import ai.verisoft.extensions.RandomNumberExtension;
-import org.junit.jupiter.api.extension.ExtendWith;
+import co.verisoft.fw.asserts.SoftAsserts;
+import org.junit.jupiter.api.Test;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+public class SoftAssertionDemoTest {
 
-@Target({ElementType.FIELD, ElementType.PARAMETER})
-@Retention(RetentionPolicy.RUNTIME)
-@ExtendWith(RandomNumberExtension.class)
-public @interface Random {
+    @Test
+    public void softAsserTest() {
+        SoftAsserts softAsserts = new SoftAsserts();
+        boolean condition1 = true;
+        boolean condition2 = true;
+
+        // Some test code
+
+        softAsserts.assertTrue(condition1, "Condition 1 should be true");
+
+        // Some more test code
+        System.out.println("This is a ");
+
+
+        softAsserts.assertTrue(condition2, "Condition 2 should be true");
+
+        softAsserts.assertAll();
+    }
 }

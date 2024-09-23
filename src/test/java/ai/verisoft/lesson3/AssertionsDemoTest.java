@@ -34,14 +34,30 @@ class AssertionsDemoTest {
 
     private final Person person = new Person("Jane", "Doe");
 
+    @Test
+    public void stoppedAssertion() {
+        int num1 = 3, num2 = 5;
+
+        assertAll("Assert all functinos",
+                () -> assertEquals(8, calculator.add(num1, num2)),
+                () -> assertEquals(15, calculator.multiply(num1, num2))
+        );
+    }
 
     @Test
     void standardAssertions() {
-        assertEquals(2, calculator.add(1, 1));
-        assertEquals(4, calculator.multiply(2, 2),
-                "The optional failure message is now the last parameter");
-        assertTrue('a' < 'b', () -> "Assertion messages can be lazily evaluated -- "
-                + "to avoid constructing complex messages unnecessarily.");
+        boolean isUserDefines = false;
+        assertAll("test all",
+                () -> assertTrue(isUserDefines, "The user is not defined"),
+                () -> assertEquals(3, 1 + 1)
+        );
+
+
+//        assertEquals(4, calculator.multiply(2, 2),
+//                "The optional failure message is now the last parameter");
+//
+//        assertTrue('a' < 'b', () -> "Assertion messages can be lazily evaluated -- "
+//                + "to avoid constructing complex messages unnecessarily.");
     }
 
     @Test
@@ -92,8 +108,11 @@ class AssertionsDemoTest {
     @Test
     void timeoutNotExceeded() {
         // The following assertion succeeds.
-        assertTimeout(ofMinutes(2), () -> {
+        assertTimeout(ofMillis(500), () -> {
             // Perform task that takes less than 2 minutes.
+            Thread.sleep(300);
+            assertTrue(true);
+            Thread.sleep(300);
         });
     }
 
@@ -140,7 +159,10 @@ class AssertionsDemoTest {
 
     @Test
     void failedTest() {
-        fail("a failing test");
+        fail("disabled until bug #33 is fixed");
+        // Test scnario
+        // .....
+        // Some more code
     }
 
 

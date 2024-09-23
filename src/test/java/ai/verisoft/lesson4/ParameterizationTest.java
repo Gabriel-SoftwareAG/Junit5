@@ -17,9 +17,8 @@
  */
 package ai.verisoft.lesson4;
 
+import ai.verisoft.Calculator;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Disabled;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 
@@ -38,14 +37,14 @@ public class ParameterizationTest {
     @ParameterizedTest
     @ValueSource(ints = { 1, 2, 3 })
     void palindromes(int candidate) {
-        Assertions.assertEquals(candidate, 2);
+        assertEquals(2, candidate);
     }
 
 
     @ParameterizedTest
     @ValueSource(strings = { "alpha", "beta", "charly" })
     void palindromes(String candidate) {
-        Assertions.assertEquals(candidate.length(), 5);
+        assertEquals(5, candidate.length());
     }
 
 
@@ -60,6 +59,7 @@ public class ParameterizationTest {
     @MethodSource("stringProvider")
     void testWithExplicitLocalMethodSource(String argument) {
         assertNotNull(argument);
+        assertEquals(5, argument.length());
     }
 
 
@@ -108,6 +108,14 @@ public class ParameterizationTest {
         assertNotNull(fruit);
         assertNotEquals(0, rank);
     }
+
+    @ParameterizedTest
+    @CsvFileSource(resources = "/data.csv", numLinesToSkip = 1)
+    public void testCalculatorAddition(int number1, int number2, int number3){
+        Calculator calculator = new Calculator();
+        assertEquals(number3, calculator.add(number2, number1));
+    }
+
 
 
     @ParameterizedTest

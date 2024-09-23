@@ -84,8 +84,7 @@ public class RandomNumberExtension implements BeforeAllCallback, BeforeEachCallb
                     try {
                         field.setAccessible(true);
                         field.set(testInstance, this.random.nextInt());
-                    }
-                    catch (Exception ex) {
+                    } catch (Exception ex) {
                         throw new RuntimeException(ex);
                     }
                 });

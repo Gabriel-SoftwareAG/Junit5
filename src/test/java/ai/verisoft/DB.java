@@ -15,29 +15,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package ai.verisoft.lesson5;
+package ai.verisoft;
 
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.parallel.Execution;
-import org.junit.jupiter.api.parallel.ExecutionMode;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
-
-
-@Execution(ExecutionMode.CONCURRENT)
-public class ParallelTestExample {
-
-    @ParameterizedTest
-    @ValueSource(ints = { 1, 2, 3 })
-    public void test1(int x) throws InterruptedException {
-        System.out.println("test #1 " + x);
-        Thread.sleep(5000);
-    }
-
-
-    @Test
-    public void test2() throws InterruptedException {
-        System.out.println("test #2");
-        Thread.sleep(3000);
-    }
+public @interface DB {
+    String value();
 }
