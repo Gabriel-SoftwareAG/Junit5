@@ -24,14 +24,14 @@ Here's a brief overview of the repository structure:
 
 To run the code in this repository, ensure you have the following set up:
 
-- **Java JDK 8** or higher
+- **Java JDK 11** or higher
 - **Maven** (or **Gradle**) for dependency management
 - An IDE that supports **JUnit 5**, such as IntelliJ IDEA or Eclipse
 
 Make sure to install the necessary dependencies by running:
 
 ```bash
-mvn clean install
+mvn clean test
 ```
 
 ## How to use this repository
