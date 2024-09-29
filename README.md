@@ -32,6 +32,7 @@ Make sure to install the necessary dependencies by running:
 
 ```bash
 mvn clean install
+```
 
 ## How to use this repository
 
